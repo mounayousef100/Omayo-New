@@ -44,14 +44,55 @@ public class ExcelUtils {
 	}
 	
 	
-	public void addRandomDataToEmptyRows(int targetRowCount, int columnIndex) {
+	public void addRandomFakerDataToEmptyRows(int targetRowCount, int columnIndex) {
+		
+	    int rowCount = sheet.getLastRowNum() + 1;
+	    int rowsAdded = 0; // تتبع عدد الصفوف التي تم إضافة البيانات إليها
+	    Faker faker = new Faker();
+
+	    List<String> randomValues = new ArrayList<>(); // قائمة لتخزين القيم العشوائية
+	    
+	    // ملأ القائمة بالبيانات العشوائية المطلوبة
+	    while (randomValues.size() < targetRowCount) {
+	        String randomString = faker.lorem().word();
+	        if (!randomValues.contains(randomString)) {
+	            randomValues.add(randomString);
+	        }
+	    }
+
+	    for (int i = 0; i < rowCount && rowsAdded < targetRowCount; i++) {
+	        XSSFRow row = sheet.getRow(i);
+	        if (row != null) {
+	            XSSFCell cell = row.getCell(columnIndex);
+	            if (cell == null || cell.getCellType() == CellType.BLANK) {
+	                if (rowsAdded < randomValues.size()) {
+	                    String randomString = randomValues.get(rowsAdded);
+	                    row.createCell(columnIndex).setCellValue(randomString);
+	                    System.out.println("Successfully entered value in Excel " + randomString);
+	                    rowsAdded++; // زيادة العدد عند إضافة بيانات
+	                }
+	            }
+	        }
+	    }
+
+	    try {
+	        fileOut = new FileOutputStream(path);
+	        workbook.write(fileOut);
+	        fileOut.close();
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	}
+
+	
+	public void addRandomDataRows(int targetRowCount, int columnIndex) {
 	    int rowCount = sheet.getLastRowNum() + 1;
 	    int rowsAdded = 0;
 	    Set<String> randomValues = new HashSet<>();
 	    Random random = new Random();
 
 	    while (randomValues.size() < targetRowCount) {
-	        String randomString = generateRandomString(targetRowCount); 
+	        String randomString = generateRandomString(targetRowCount); // تمرير العدد المستهدف لدالة توليد النص العشوائي
 	        randomValues.add(randomString);
 	    }
 
@@ -83,21 +124,20 @@ public class ExcelUtils {
 	    String characters = "AB$CDEF@GHI#JKLMNOP!QRSTUVWXY)(Zabcde%fghijk^lmnopqrstuvwxyz0&*123456789";
 	    StringBuilder randomString = new StringBuilder(10);
 	    Random random = new Random();
-	    int randomType = random.nextInt(3);
+	    int randomType = random.nextInt(3); // 0 للأحرف, 1 للأرقام, 2 للرموز
 
 	    for (int i = 0; i < 10; i++) {
 	        if (randomType == 0) {
-	            randomString.append(characters.charAt(random.nextInt(52))); 
+	            randomString.append(characters.charAt(random.nextInt(52))); // حرف عشوائي
 	        } else if (randomType == 1) {
-	            randomString.append(random.nextInt(10)); 
+	            randomString.append(random.nextInt(10)); // رقم عشوائي
 	        } else {
-	            randomString.append(characters.charAt(52 + random.nextInt(8))); 
+	            randomString.append(characters.charAt(52 + random.nextInt(8))); // رمز عشوائي
 	        }
 	    }
 
 	    return randomString.toString();
 	}
-	
 	// Helper method to get the total number of columns in the sheet
 	private int getColumnCount() {
 		row = sheet.getRow(0);

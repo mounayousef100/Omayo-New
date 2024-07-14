@@ -8,8 +8,6 @@ import com.omayo.base.BasePage;
 
 public class LoginPage extends BasePage {
 
-	Action action = new Action();
-
 	@FindBy(name = "userid")
 	private WebElement usernameField;
 
@@ -19,15 +17,11 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//input[@onclick='check(this.form)']")
 	private WebElement loginButton;
 
-	public LoginPage() {
 
-		PageFactory.initElements(driver, this);
-	}
+	public void login( String userName,String pass) throws Throwable {
 
-	public void login( String user,String pasw) throws Throwable {
-
-		action.sendText(usernameField, user);
-		action.sendText(passwordField, pasw);
+		action.sendText(usernameField, userName);
+		action.sendText(passwordField, pass);
 		action.click(loginButton);
 		action.AlertAccept(driver);
 

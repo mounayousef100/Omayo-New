@@ -1,6 +1,5 @@
 package com.omayo.utility;
 import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -35,13 +34,13 @@ public class Listeners extends BasePage implements ITestListener {
 		String testMethodName = result.getName();
 		
 		try {
-			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+		
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
 		try {
-			takeScreenshot(testMethodName,driver);
+			takeScreenshot(testMethodName);
 		} catch (IOException e) {
 			
 			e.printStackTrace();

@@ -1,17 +1,24 @@
 package com.omayo.rightpagetest;
 
 import java.time.Duration;
-import org.testng.annotations.Test;
-import com.omayo.base.BaseTest;
-import com.omayo.rightpageobject.ReadonlyTextBoxPage;
 
-public class ReadonlyTextBoxTest extends BaseTest {
-	private ReadonlyTextBoxPage readonlyTextBoxPage;
+import org.testng.annotations.Test;
+
+import com.omayo.base.BaseTest;
+import com.omayo.rightpageobject.ReadOnlyTextBoxPage;
+
+public class ReadOnlyTextBoxTest extends BaseTest{
+	
+	private ReadOnlyTextBoxPage readOnlyTextBoxPage ;
+	
 	@Test()
-	public void readonlyTextBoxTest() throws InterruptedException {
+	public void readOnlyTextBoxTest() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		readonlyTextBoxPage = new ReadonlyTextBoxPage();
-		readonlyTextBoxPage.readonlyTextBox();
+		readOnlyTextBoxPage = new ReadOnlyTextBoxPage();
+		readOnlyTextBoxPage.readOnlyTextBoxPage();
+		
 		
 	}
+	
+
 }

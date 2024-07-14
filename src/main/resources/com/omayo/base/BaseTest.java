@@ -3,15 +3,15 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTest extends BasePage {
 	protected WebDriver driver;
 	protected Logger log;
 	
 
-	@BeforeClass
+	@BeforeTest
 	public void setUP() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
@@ -19,10 +19,10 @@ public class BaseTest extends BasePage {
 		log.info("Navigated to application URL");
 	}
 
-	@AfterClass
+	@AfterTest
 	public void clouser() {
 		if (driver != null) {
-			driver.quit();
+			//driver.quit();
 			log.info("Browser get closed");
 		}
 	}

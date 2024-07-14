@@ -59,7 +59,7 @@ public class Action extends BasePage {
 
 		} catch (Exception e) {
 
-			System.out.println(" Successfully entered text");
+			System.out.println(" Not Successfully entered text");
 			return false;
 		}
 
@@ -85,19 +85,16 @@ public class Action extends BasePage {
 
 	// عند التاكد اذا كان العنصر محدد ام لا
 	public boolean isSelected(WebElement ele) {
-		try {
+		
 			if (ele.isSelected()) {
 				System.out.println("The element is Selected");
 				return true;
-
 			}
-		} catch (Exception e) {
-			System.out.println("The element not Selected");
-			return false;
-		}
+			else {
 
-		System.out.println(" Not Successfully locate element");
-		return false;
+				System.out.println("The element not Selected");
+				return false;
+			}
 	}
 
 	// عند التاكد اذا كان العنصر فعال ام لا
@@ -381,7 +378,7 @@ public class Action extends BasePage {
 	}
 
 	// عند الضغط مرتين على الماوس
-	public void doubleClick(WebDriver driver, WebElement ele) {
+	public void doubleClick(WebDriver driver,WebElement ele) {
 		Actions act = new Actions(driver);
 		act.moveToElement(ele).doubleClick().perform();
 	}

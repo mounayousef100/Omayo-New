@@ -10,11 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
-
 import com.omayo.actiondriver.Action;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -67,10 +64,9 @@ public class BasePage {
 		return System.getProperty("user.dir") + "\\Configuration\\data.properties";
 	}
 
-	public void takeScreenshot(String testName, WebDriver driver) throws IOException {
-		File SourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String destinationFilePath = System.getProperty("user.dir") + "\\screenshots\\" + testName + ".png";
-		FileUtils.copyFile(SourceFile, new File(destinationFilePath));
-	}
-
+	  public void takeScreenshot(String testName) throws IOException {
+			File SourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			String destinationFilePath = System.getProperty("user.dir") + "\\screenshots\\" + testName + ".png";
+			FileUtils.copyFile(SourceFile, new File(destinationFilePath));
+		}
 }

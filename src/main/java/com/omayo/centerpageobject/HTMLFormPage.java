@@ -1,15 +1,11 @@
 package com.omayo.centerpageobject;
-
-import java.io.IOException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import com.omayo.actiondriver.Action;
+import com.github.javafaker.Faker;
 import com.omayo.base.BasePage;
 
 public class HTMLFormPage extends BasePage {
-    private Action action = new Action();
+    Faker faker = new Faker();
 
     @FindBy(xpath = "//form[@name='form1']/input[1]")
     private WebElement usernameInput;
@@ -20,15 +16,17 @@ public class HTMLFormPage extends BasePage {
     @FindBy(xpath = "//form[@name='form1']/button")
     private WebElement loginButton;
 
-    public HTMLFormPage(WebDriver driver) throws IOException {
-        PageFactory.initElements(driver, this);
-    }
-
+ 
     public void fillLoginForm() throws InterruptedException {
         Thread.sleep(3000);
-        action.sendText(usernameInput, prop.getProperty("username"));
+        String firstName = faker.name().firstName();
+        String lastName = faker.name().lastName();
+        String email = firstName+lastName +"@gmail.com";
+        String phoneNumber = "079"+ faker.number().numberBetween(2000000,3000000);
+        String pass  = faker.number().toString();
+        action.sendText(usernameInput, phoneNumber);
         Thread.sleep(3000);
-        action.sendText(passwordInput, prop.getProperty("password"));
+        action.sendText(passwordInput,"muna123");
         action.click( loginButton);
         Thread.sleep(3000);
     }

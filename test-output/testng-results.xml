@@ -1,123 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-30T09:26:32 EET" name="Default suite" finished-at="2023-11-30T09:26:56 EET" duration-ms="23337">
+  <suite started-at="2024-05-15T21:43:33 EET" name="Default suite" finished-at="2024-05-15T21:44:44 EET" duration-ms="70668">
     <groups>
-      <group name="smoke">
-        <method signature="LocateUsingNameAttributeTest.nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" name="nameAttributeTest" class="com.omayo.rightpagetest.LocateUsingNameAttributeTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-11-30T09:26:32 EET" name="Default test" finished-at="2023-11-30T09:26:56 EET" duration-ms="23337">
+    <test started-at="2024-05-15T21:43:33 EET" name="Default test" finished-at="2024-05-15T21:44:44 EET" duration-ms="70668">
       <class name="com.omayo.rightpagetest.LocateUsingNameAttributeTest">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:32 EET" name="setUP" finished-at="2023-11-30T09:26:36 EET" duration-ms="3933" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:43:33 EET" name="setUP" finished-at="2024-05-15T21:44:06 EET" duration-ms="32492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:36 EET" name="setUp" finished-at="2023-11-30T09:26:36 EET" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:06 EET" name="setUp" finished-at="2024-05-15T21:44:06 EET" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="186" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:42 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:42 EET" duration-ms="179" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@161d95c6]]>
+                <![CDATA[[Ljava.lang.Object;@3db1ce78]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="94" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:42 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:42 EET" duration-ms="101" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@5203c80f]]>
+                <![CDATA[[Ljava.lang.Object;@3a3ad8e7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="98" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:42 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:42 EET" duration-ms="91" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@439f2d87]]>
+                <![CDATA[[Ljava.lang.Object;@6a6d1ff3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="94" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:42 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:42 EET" duration-ms="91" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@721bf7ad]]>
+                <![CDATA[[Ljava.lang.Object;@64b73e0a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="89" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:42 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="93" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@852ef8d]]>
+                <![CDATA[[Ljava.lang.Object;@57c6feea]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="95" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="92" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@44dd0d38]]>
+                <![CDATA[[Ljava.lang.Object;@3b57f915]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="93" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="95" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7e94e331]]>
+                <![CDATA[[Ljava.lang.Object;@39c7fb0b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:55 EET" duration-ms="93" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="105" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@539fc5d1]]>
+                <![CDATA[[Ljava.lang.Object;@645dc557]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:1, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:55 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2023-11-30T09:26:56 EET" duration-ms="88" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="101" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@4cae66a8]]>
+                <![CDATA[[Ljava.lang.Object;@48c5698]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameAttributeTest -->
-        <test-method is-config="true" signature="clouser()[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@4390f46e]" started-at="2023-11-30T09:26:56 EET" name="clouser" finished-at="2023-11-30T09:26:56 EET" duration-ms="131" status="PASS">
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@17884d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@68e24e7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="90" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@c732e1c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="89" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6aad919c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@56c42964]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:43 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:43 EET" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@211a9647]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:44 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:44 EET" duration-ms="88" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@340c5fb6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:44 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:44 EET" duration-ms="86" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@322b09da]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method signature="nameAttributeTest([Ljava.lang.Object;)[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:44 EET" name="nameAttributeTest" data-provider="LocateUsingNameAttributePage" finished-at="2024-05-15T21:44:44 EET" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@45d389f2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameAttributeTest -->
+        <test-method is-config="true" signature="clouser()[pri:0, instance:com.omayo.rightpagetest.LocateUsingNameAttributeTest@652ce654]" started-at="2024-05-15T21:44:44 EET" name="clouser" finished-at="2024-05-15T21:44:44 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clouser -->

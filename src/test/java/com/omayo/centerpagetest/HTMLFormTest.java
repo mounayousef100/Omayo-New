@@ -12,7 +12,7 @@ public class HTMLFormTest extends BaseTest {
     @Test()
     public void hTMLFormTest() throws InterruptedException, IOException {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        htmlFormPage = new HTMLFormPage(driver);
+        htmlFormPage = new HTMLFormPage();
         htmlFormPage.fillLoginForm();
     }
 }

@@ -2,17 +2,19 @@ package com.omayo.rightpageobject;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 import com.omayo.base.BasePage;
 
-public class ReadonlyTextBoxPage extends BasePage{
+public class ReadOnlyTextBoxPage extends BasePage{
 	
-	@FindBy(id = "rotb")
-	private WebElement readonlyTextBox;
-
-	public void  readonlyTextBox() throws InterruptedException {
-		Thread.sleep(3000);
-		softAssert.assertFalse(action.sendText(readonlyTextBox, "hi"));
+	@FindBy(id= "rotb")
+	private WebElement readOnlyTextBox ;
+	
+	public void readOnlyTextBoxPage() {
+		
+		softAssert.assertFalse(action.sendText(readOnlyTextBox, "muna"));   
 		softAssert.assertAll();
-		Thread.sleep(3000);
+		
 	}
+
 }

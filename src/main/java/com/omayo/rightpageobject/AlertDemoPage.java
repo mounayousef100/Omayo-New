@@ -1,18 +1,19 @@
 package com.omayo.rightpageobject;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 import com.omayo.base.BasePage;
 
 public class AlertDemoPage extends BasePage{
-
-	@FindBy(id = "alert1")
-	private WebElement clickToGetAlert;
-
+	@FindBy(id ="alert1")
+	private WebElement buttonAlertDemo;
 	
-	public void clickToGetAlert() throws InterruptedException {
-		Thread.sleep(3000);
-		action.click(clickToGetAlert);
-        action.AlertAccept(driver);
-        Thread.sleep(3000);
-}
+	public void alertDemoPage() {
+		
+		action.click(buttonAlertDemo);
+		action.AlertAccept(driver);
+		
+	}
+
 }

@@ -6,14 +6,15 @@ import com.omayo.base.BaseTest;
 import com.omayo.rightpageobject.LocateUsingClassPage;
 
 
-public class LocateUsingClassTest extends BaseTest {
-	private  LocateUsingClassPage  locateUsingClassPage;
-
+public class LocateUsingClassTest extends BaseTest{
+private LocateUsingClassPage locateUsingClassPage;
+	
 	@Test()
-	public void  locateUsingClassTest() throws InterruptedException {
+	public void locateUsingClassTest()  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		locateUsingClassPage = new  LocateUsingClassPage();
-	    locateUsingClassPage.locateUsingClass();
+		locateUsingClassPage = new LocateUsingClassPage();
+		locateUsingClassPage.locateUsingClass();
+		
 		
 	}
 }
